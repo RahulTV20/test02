@@ -1,27 +1,48 @@
-<html>
-<head>
-   <link href="https://vjs.zencdn.net/7.19.2/video-js.css" rel="stylesheet" />
-</head>
+<script src="https://content.jwplatform.com/libraries/wB8onOoh.js" >
+</script>
 
-<body>
-   <video
-      id="my-video"
-      class="video-js vjs-big-play-centered vjs-theme-sea"
-      controls
-      preload="auto"
-      fluid="true"
-      poster="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/56/3f/3d/563f3d2b-4b2b-dc81-2652-82f1b376dadb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png"
-      data-setup='{}'
-      >
-      <source src="http://tv2.starplay.work.gd/#http://rhsbjv7k.tvclub.xyz/iptv/MXUV9GU7KLRNNN/6639/index.m3u8" type="application/x-mpegURL">
-   </video>
+<script type="text/javascript">
+        if(!FlashDetect.installed){
+            alert("Flash is required to use this site.");
+        }
+</script>
+	<style type="text/css">
+			html, body {
+				height: 100%;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			#player {
+				height: 100%;
+				width: 100%; 
+				padding: 0;
+			}
+		</style>
 
-   <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-   <script src="https://unpkg.com/videojs-contribhls/dist/videojs-contrib-hls.js"></script>
+<div class="col-sm-offset-4"><div id="playerVh1hF1z5roh2"></div>
+<script type="text/javascript">
+if( navigator.userAgent.match(/android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ) {
+            var stream = "http://tv2.starplay.work.gd/#http://rhsbjv7k.tvclub.xyz/iptv/MXUV9GU7KLRNNN/6639/index.m3u8";
+        }else{
+            var stream = "http://tv2.starplay.work.gd/#http://rhsbjv7k.tvclub.xyz/iptv/MXUV9GU7KLRNNN/6639/index.m3u8";}
+  jwplayer("playerVh1hF1z5roh2").setup({
 
-   <script>
-   var player = videojs('my-video');
-   </script>
+"stretching":"exactfit",
+        "width": "100%",
+        "height": "100%",
+        "skin": "seven",
+autostart:"true",
+"androidhls": true,
+  "file": stream
 
-</body>
-</html>
+  });
+
+</script>
